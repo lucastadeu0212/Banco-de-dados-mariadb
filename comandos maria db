@@ -1,0 +1,35 @@
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Pedro", 20, "SP","TI");
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Wellington", 18, "SP","TI");
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Davi", 17, "MG","RH");
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Manu", 17, "MG","RH"); 
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Murilo", 23, "RJ","TI");
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Lucas", 28, "RJ","AdM");
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Carlos", 17, "RJ","ADM");
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Rodrigo", 27, "RJ","ADM");
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Jonathan", 16, "RJ","RH");
+INSERT INTO tb_funcionario(nome,idade,estado,departamento) VALUES("Thais", 29, "RJ","TI");  
+
+SELECT * FROM tb_funcionario
+
+UPDATE tb_funcionario
+SET estado = "MG"
+WHERE id = 11
+
+SELECT * FROM tb_funcionario
+WHERE departamento = "TI"
+
+UPDATE tb_funcionario
+SET login = "RJ123"
+WHERE estado = "RJ"   
+
+UPDATE tb_funcionario
+SET login = "SP123"
+WHERE estado = "SP"
+
+UPDATE tb_funcionario
+SET login = "MG123"
+WHERE estado = "MG"
+
+UPDATE tb_funcionario
+SET login = ""
+WHERE estado = "MG"
